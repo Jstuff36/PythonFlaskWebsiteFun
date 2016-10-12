@@ -2,7 +2,7 @@ from flask.ext.wtf import Form
 from wtforms import StringField, BooleanField
 from wtforms.validators import DataRequired
 
-class LoginForm(Form):
+class LoginForm(Form): #LoginForm is a subclass of Form. Osea LoginForm inherits from From
 	openid = StringField('openid', validators = [DataRequired()]) 
 	
 	'''The DataRequired import is a validator, a function that can be attached to a field 
